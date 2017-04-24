@@ -22,7 +22,7 @@ public class EvalRomanNumerals extends AbstractRomanNumerals {
 			currentChar = romanChars[i];
 			currentValue = evaluateCharacter(currentChar);
 			
-			if(i==0 || prevChar == ' ')
+			if( prevChar == ' ')
 				prevValue = 0;
 			else
 				prevValue = evaluateCharacter(prevChar);
