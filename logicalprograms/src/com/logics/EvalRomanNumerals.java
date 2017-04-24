@@ -5,7 +5,7 @@ public class EvalRomanNumerals extends AbstractRomanNumerals {
 	@Override
 	public Integer evaluateRomanValue(String romanValue) throws Exception{
 		// TODO Auto-generated method stub
-		String convUpperCase = romanValue.toUpperCase();
+		
 		int resultValue = 0;
 		int currentValue = 0;
 		int prevValue = 0;
@@ -15,6 +15,7 @@ public class EvalRomanNumerals extends AbstractRomanNumerals {
 		if( romanValue == null || "".equals(romanValue) )
 			throw new NullPointerException("argument value should not be null or empty");
 		
+		String convUpperCase = romanValue.toUpperCase();
 		char[] romanChars = convUpperCase.toCharArray();
 		
 		for(int i = romanChars.length - 1; i >= 0; i--){
