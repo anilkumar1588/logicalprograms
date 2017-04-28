@@ -20,10 +20,9 @@ public class QueueOperations implements Queue {
 		if( rearIndex == queue.length - 1)
 			throw new Exception("Queue is Full, capacity of queue is "+ queue.length);
 		
-		if(isEmpty()){
+		if(isEmpty())
 			frontIndex++;
-			queue[++rearIndex] = element;
-		}else
+			
 			queue[++rearIndex] = element;
 
 	}
