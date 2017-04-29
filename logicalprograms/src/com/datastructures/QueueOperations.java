@@ -33,7 +33,7 @@ public class QueueOperations implements Queue {
 		if(isEmpty())
 			throw new Exception("Queue is empty");
 		if(frontIndex > rearIndex)
-			throw new Exception("No Elements in Queue");
+			throw new Exception("No Elements in Queue : memory occupied");
 		
 		return queue[frontIndex++];
 	}
@@ -53,7 +53,7 @@ public class QueueOperations implements Queue {
 		if(isEmpty())
 			throw new Exception("Queue is empty");
 		if(frontIndex > rearIndex)
-			throw new Exception("No Elements in Queue");
+			throw new Exception("No Elements in Queue: memory occupied");
 		return queue[frontIndex];
 	}
 
